@@ -31,8 +31,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'haml'
 
-gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
-gem 'omniauth', :git=> 'https://github.com/intridea/omniauth.git'
+gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
+gem 'omniauth', :git=> 'git://github.com/intridea/omniauth.git'
 gem 'oauth2', :git => 'git://github.com/intridea/oauth2.git'
-
-gem 'fb_graph'
