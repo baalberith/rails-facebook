@@ -1,0 +1,7 @@
+%h2 Posts
+
+- for post in @posts
+  %p= post.title
+  %p= post.content
+
+%p= link_to "New Post", new_post_path
