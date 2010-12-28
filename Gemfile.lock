@@ -1,46 +1,4 @@
 GIT
-  remote: git://github.com/intridea/oauth2.git
-  revision: 17a618976b1df8b5898486cadfd0e9ac43966caf
-  specs:
-    oauth2 (0.1.0)
-      faraday (~> 0.5.0)
-      multi_json (~> 0.0.4)
-
-GIT
-  remote: git://github.com/intridea/omniauth.git
-  revision: 24fa614724e4a1b54134c17a364ac867cf05d673
-  specs:
-    oa-basic (0.2.0.beta1)
-      multi_json (~> 0.0.2)
-      nokogiri (~> 1.4.2)
-      oa-core (= 0.2.0.beta1)
-      rest-client (~> 1.6.0)
-    oa-core (0.2.0.beta1)
-      rack (~> 1.1)
-    oa-enterprise (0.2.0.beta1)
-      net-ldap (~> 0.1.1)
-      nokogiri (~> 1.4.2)
-      oa-core (= 0.2.0.beta1)
-      pyu-ruby-sasl (~> 0.0.3.1)
-      rubyntlm (~> 0.1.1)
-    oa-oauth (0.2.0.beta1)
-      multi_json (~> 0.0.2)
-      nokogiri (~> 1.4.2)
-      oa-core (= 0.2.0.beta1)
-      oauth (~> 0.4.0)
-      oauth2 (~> 0.1.0)
-    oa-openid (0.2.0.beta1)
-      oa-core (= 0.2.0.beta1)
-      rack-openid (~> 1.2.0)
-      ruby-openid-apps-discovery
-    omniauth (0.2.0.beta1)
-      oa-basic (= 0.2.0.beta1)
-      oa-core (= 0.2.0.beta1)
-      oa-enterprise (= 0.2.0.beta1)
-      oa-oauth (= 0.2.0.beta1)
-      oa-openid (= 0.2.0.beta1)
-
-GIT
   remote: git://github.com/plataformatec/devise.git
   revision: c27bc21af9462ecd92e1d107fb9e5a2abee4b7cc
   specs:
@@ -102,7 +60,39 @@ GEM
     multipart-post (1.0.1)
     net-ldap (0.1.1)
     nokogiri (1.4.4)
+    oa-basic (0.1.6)
+      multi_json (~> 0.0.2)
+      nokogiri (~> 1.4.2)
+      oa-core (= 0.1.6)
+      rest-client (~> 1.6.0)
+    oa-core (0.1.6)
+      rack (~> 1.1)
+    oa-enterprise (0.1.6)
+      net-ldap (~> 0.1.1)
+      nokogiri (~> 1.4.2)
+      oa-core (= 0.1.6)
+      pyu-ruby-sasl (~> 0.0.3.1)
+      rubyntlm (~> 0.1.1)
+    oa-oauth (0.1.6)
+      multi_json (~> 0.0.2)
+      nokogiri (~> 1.4.2)
+      oa-core (= 0.1.6)
+      oauth (~> 0.4.0)
+      oauth2 (~> 0.1.0)
+    oa-openid (0.1.6)
+      oa-core (= 0.1.6)
+      rack-openid (~> 1.2.0)
+      ruby-openid-apps-discovery
     oauth (0.4.4)
+    oauth2 (0.1.0)
+      faraday (~> 0.5.0)
+      multi_json (~> 0.0.4)
+    omniauth (0.1.6)
+      oa-basic (= 0.1.6)
+      oa-core (= 0.1.6)
+      oa-enterprise (= 0.1.6)
+      oa-oauth (= 0.1.6)
+      oa-openid (= 0.1.6)
     orm_adapter (0.0.3)
     polyglot (0.3.1)
     pyu-ruby-sasl (0.0.3.2)
@@ -148,7 +138,7 @@ PLATFORMS
 DEPENDENCIES
   devise!
   haml
-  oauth2!
-  omniauth!
+  oauth2
+  omniauth
   rails (= 3.0.1)
   sqlite3-ruby

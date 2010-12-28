@@ -171,5 +171,9 @@ Devise.setup do |config|
   #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end
   
-  config.omniauth :facebook, "184111661599653", "8a786b9133f631201e99d3d469ab8974"
+  config.omniauth :facebook, "184111661599653", "8a786b9133f631201e99d3d469ab8974",
+    :site => 'https://graph.facebook.com/',
+    :authorize_path => '/oauth/authorize',
+    :access_token_path => '/oauth/access_token',
+    :scope => %w(email)
 end
